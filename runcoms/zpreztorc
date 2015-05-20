@@ -39,7 +39,7 @@ zstyle ':prezto:load' pmodule \
   'osx' \
   'tmux' \
   'syntax-highlighting' \
-  'prompt' \
+  'prompt' 
 
 #
 # Editor
