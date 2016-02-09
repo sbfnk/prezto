@@ -9,3 +9,43 @@
 if [[ "$SHLVL" -eq 1 && ! -o LOGIN && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprofile"
 fi
+
+## Seb's environment variables
+export PATH=$HOME/.local/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:$PATH
+
+export CODEDIR=$HOME/Code
+export GRAPHDIR=$HOME/Graphs
+
+##export PYTHONPATH=$PYTHONPATH:$HOME/.local/lib/python:/usr/local/lib/python2.7/site-packages
+
+export CLICOLOR=1
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
+[[ -s $HOME/perl5/perlbrew/etc/bashrc ]] && source $HOME/perl5/perlbrew/etc/bashrc
+
+export MANPATH=$HOME/.local/share/man:$MANPATH
+
+export PATH=$PATH:$HOME/.local/src/libbi/script
+export PATH=$PATH:$HOME/Scripts
+
+export PARINIT='rTbgq B=.,?!_A_a Q=_s>|+'
+
+export CPPFLAGS="$CPPFLAGS -I$HOME/.local/include"
+export CFLAGS="$CLAGS -I$HOME/.local/include"
+export LDFLAGS="$LDFLAGS -L$HOME/.local/lib"
+
+export PERL5LIB=~/perl5/lib/perl5
+[[ -x $(whence -p perl) ]] && eval $(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib)
+
+export CPLUS_INCLUDE_PATH=/usr/local/include
+#export DYLD_FALLBACK_LIBRARY_PATH=/usr/local/lib
+
+[[ -x $(whence -p rbenv) ]] && eval "$(rbenv init -)"
+
+export VISUAL="/usr/local/bin/emacsclient -t"
+export EDITOR="/usr/local/bin/emacsclient -t"
+
+export PYTHONIOENCODING=utf-8  
