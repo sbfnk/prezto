@@ -16,7 +16,7 @@ export PATH=$HOME/.local/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:$PATH
 export CODEDIR=$HOME/Code
 export GRAPHDIR=$HOME/Graphs
 
-##export PYTHONPATH=$PYTHONPATH:$HOME/.local/lib/python:/usr/local/lib/python2.7/site-packages
+export PYTHONPATH=$PYTHONPATH:$HOME/code/GPy
 
 export CLICOLOR=1
 
