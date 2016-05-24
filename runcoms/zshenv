@@ -38,14 +38,17 @@ export CFLAGS="$CLAGS -I$HOME/.local/include"
 export LDFLAGS="$LDFLAGS -L$HOME/.local/lib"
 
 export PERL5LIB=~/perl5/lib/perl5
-[[ -x $(whence -p perl) ]] && eval $(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib)
 
 export CPLUS_INCLUDE_PATH=/usr/local/include
 #export DYLD_FALLBACK_LIBRARY_PATH=/usr/local/lib
-
-[[ -x $(whence -p rbenv) ]] && eval "$(rbenv init -)"
 
 export VISUAL="/usr/local/bin/emacsclient -t"
 export EDITOR="/usr/local/bin/emacsclient -t"
 
 export PYTHONIOENCODING=utf-8  
+
+[[ -x $(whence -p perl) ]] && eval $(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib)
+[[ -x $(whence -p rbenv) ]] && eval "$(rbenv init -)"
+[[ -x $(whence -p pyenv) ]] && eval "$(pyenv init -)"
+
+
