@@ -28,8 +28,8 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 export MANPATH=$HOME/.local/share/man:$MANPATH
 
-export PATH=$PATH:$HOME/.local/src/libbi/script
-export PATH=$PATH:$HOME/Scripts
+export PATH=$PATH:$HOME/code/libbi/script
+export PATH=$PATH:$HOME/code/batchgit
 
 export PARINIT='rTbgq B=.,?!_A_a Q=_s>|+'
 
